@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrar producto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/header-button.css">
+    <link rel="stylesheet" href="../assets/css/validacioninput.css">
+    <link rel="stylesheet" href="../assets/css/crearProducto.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+</head>
+<body  class="contain-principal">
+    <header class="section-header">
+        <div class="headerPrincipal">
+            <div class="container_header">
+        
+                <div class="busqueda_header">
+                    <div class="contain_logo">
+                        <div class="contain_logo-img"> <img class="logo_alura" src="../assets/img/Vector.png" alt="logo alura"></div>
+                        <div class="contain_logo-txt"><h2 class="logo_alura-txt"><a href="/index.html"><strong>Alura</strong>Geek</a></h2></div>
+                            
+                    </div>
+                    <div class="contain-barra">
+                        <input class="contain-barra_input" type="text" placeholder="¿Que deseas buscar?">
+                        <button class="contain-barra_button"><img src="../assets/img/Icone.png" alt="buscar"></button>
+                        
+                    </div>
+                    <div id="admin" class="contain-botonAdmin_header">
+                        <input type="button" value="Menu Administrador" onclick="">
+                    </div>
+                </div>       
+            </div>                
+        </div>         
+    </header>
+    <main class=" main agregar">
+        <form class="agregarProducto" data-form>
+            <h2 class="agregarProducto_titulo">Agregar nuevo producto</h2>
+            <div class="agregarProducto_input"  >
+                <input id="image" type="file"   class="inputfile "   required data-url>
+                <label  for="image"><span class="agregarProducto_input-span">Clic para seleccionar archivo...</span></label>               
+                <span id="url" class="inputfile-url"  ></span>  
+                <span id="error" class="input-menssage-error"></span>             
+               
+            </div>
+            <div class="agregarProducto_input">                
+                <label class="input-label" for="categoria">Categoria</label>          
+                <input type="text" class="input input1" id="categoria" data-tipo="categoria" placeholder="Consolas" required data-categoria>     
+                <span class="input-menssage-error">Este campo es requerido</span>
+            </div>
+            <div class="agregarProducto_input">
+                <label class="input-label" for="name">Nombre del producto</label>  
+                <input class="input input1" type="text" id="name" data-tipo="name" placeholder="producto XYZ" required data-name >                      
+                <span class="input-menssage-error">Este campo es requerido</span>
+            </div>
+            <div class="agregarProducto_input">
+                <label class="input-label" for="price">Precio del producto</label>   
+                <input class="input input1" type="number" id="price" data-tipo="price" placeholder="6000" required data-price>                            
+                <span class="input-menssage-error">Este campo es requerido</span>
+            </div> 
+            <div class="agregarProducto_input">
+                <input type="text" class="agregarProducto_descripcion input1"  placeholder="Descripcion del producto" data-tipo="description" required data-description>
+            <span class="input-menssage-error">Este campo es requerido</span>
+            </div>               
+            
+            <button class="agregarProducto_button" type="submit" >Agregar producto</button>
+        
+        </form>
+    </main>
+    <footer class="rodapie">
+        <section class="rodapie-informacion">
+            <div>
+
+            </div>
+            <div class="rodapie-informacion-contain">
+                <div class="rodapie-informacion-containColum">
+                    <div class="rodapie-informacion-contain_logo">
+                        <img class="logo_alura-rodapie" src="../assets/img/Vector.png" alt="logo alura">
+                            <div><img class="imageHeader-1" src="../assets/img/AluraGeek (1).png" alt=""></div>
+                            <div><img class="imageHeader-2" src="../assets/img/AluraGeek.png" alt=""></div>
+                    </div>
+                    <div class="rodapie-informacion-contain_links">
+                        <a class="contain_links-a" href="">Quienes Somos</a>
+                        <a class="contain_links-a" href="">Politica de Privacidad</a>
+                        <a class="contain_links-a" href="">Programa de fidelidad</a>
+                        <a class="contain_links-a" href="">Nuestras Tiendas</a>
+                        <a class="contain_links-a" href="">Quiero ser Franquisiado</a>
+                        <a class="contain_links-a" href="">Anuncie Aqui</a>
+                    </div>
+                </div>
+                <form class="rodapie-informacion-contain_contactForm" action="#">
+                    <fieldset>
+                        <legend class="rodapie-informacion-contain_contactForm-legend">Hable con nosotros</legend>
+                        <div class="rodapie-informacion-contain_contactForm-input">
+                            <div class="rodapie-informacion-contain_contactForm-inputName">
+                                <label class="contacForm-inputName-label" for="">Nombre</label>
+                                <input class="contacForm-inputName-input" type="text" placeholder="Example: Pedro Perez">
+                            </div>
+                            <div class="rodapie-informacion-contain_contactForm-mensaje">
+                                <textarea class="contactForm-mensaje-textArea" placeholder="Escribe mensaje" id="" cols="30" rows="10"></textarea>
+                            </div>                      
+                        </div>                       
+                        <input class="rodapie-informacion-contain_contactForm-button" type="button" value="Enviar mensaje">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="rodapie-footer">Desarrollado por eilleenmaria <br>2022</section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../js/funcional.js"></script>    
+    <script type="module" src="../controllers/registro.controllers.js"></script>     
+</body>
+</html>

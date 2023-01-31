@@ -1,0 +1,144 @@
+.section-header{    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 7.18rem;   
+}
+.headerPrincipal{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    gap:1%;
+    padding: 0;   
+    background-color:var( --color-header);
+}
+.container_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    height: 100%;   
+}
+.busqueda_header{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 0;      
+    padding: 0;
+    width: 50%;
+    height: 3.125rem;
+    gap: 5%;
+}
+.contain_logo{
+    width: 40% ;
+    height: 2.5rem;
+    gap: 2%;
+    display: flex;
+    flex-direction: row;   
+    align-items: center;    
+}
+.contain_logo-img{
+    display: flex;
+    width: 2.5rem;
+    height: 1.8rem;   
+}
+.contain_logo-txt{    
+    width:70%;    
+    margin-top: 0.2rem;
+    background-size: cover;
+    
+}
+.logo_alura-txt{font-size: 2.6vw;}
+.logo_alura-txt strong{color: var(--color-btn);}
+.logo_alura{padding-top: 0.2rem;}
+.contain_logo-text{padding-top: 0.6rem;}
+.contain-barra{  
+    width:60% ;  
+    height: 2.18rem;
+    display: flex;
+    flex-direction: row;   
+    border-radius: 0.625rem;
+    background-color: var(--color-busqueda);   
+}
+.contain-barra_input{
+    width: 80%;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+    height: 2.18rem;
+    border-top-left-radius: .93rem;
+	border-bottom-left-radius: .93rem; 
+    background-color: var(--color-busqueda);     
+}
+.contain-barra_button{
+    width: 20%;
+    outline: 0;
+    box-sizing: border-box;
+    border: none;
+    height: 2.18rem;
+    border-top-right-radius: .93rem;
+	border-bottom-right-radius: .93rem;
+    background-color: var(--color-busqueda);     
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+    .busqueda_header{
+        width: 70%;
+        gap: 2%;
+    }
+    .contain-botonAdmin_header{
+        width: 8rem;
+    }
+    .contain-botonAdmin_header :nth-child(1){
+        font-size: .8rem;
+    }
+    .container_header{
+        width: 100%;
+        padding-left:2rem ;
+        padding-right: 1rem;
+    }
+    .contain-barra{
+        width: 70%;
+    }
+    .contain_logo{
+        width: 30%;
+    }
+   
+    .logo_alura-txt{
+        font-size: 3vw;
+    }
+    .section-header{
+        height: 6rem;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .busqueda_header{
+        width: 90%;
+    }           
+    .contain-barra{
+        background-color: var(--color-header);
+        justify-content: flex-end;
+    }
+    .contain-barra_input{
+        display: none;
+    }
+    .contain_logo{
+        width: 8rem;
+    }
+    .logo_alura-txt{
+        font-size: 1rem;
+    }
+    .section-header{
+        height: 5rem;
+    }
+}
+
+

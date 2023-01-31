@@ -4,58 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Lista de productos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/index.css">  
-    <link rel="stylesheet" href="./assets/css/header-button.css">
-    <link rel="stylesheet" href="./assets/css/promocional.css">
-    <link rel="stylesheet" href="./assets/css/producto.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/listaproduct.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
-<body  class="contain-principal">
-    <header  class="section-header">
+<body>
+    <header class="section-header">
         <div class="headerPrincipal">
             <div class="container_header">
         
                 <div class="busqueda_header">
                     <div class="contain_logo">
-                        <div class="contain_logo-img"> <img class="logo_alura" src="./assets/img/Vector.png" alt="logo alura"></div>
-                        <div class="contain_logo-txt"><h2 class="logo_alura-txt"><strong>Alura</strong>Geek</h2></div>
+                        <div class="contain_logo-img"> <img class="logo_alura" src="../assets/img/Vector.png" alt="logo alura"></div>
+                        <div class="contain_logo-txt"><h2 class="logo_alura-txt"><a href="/index.html"><strong>Alura</strong>Geek</a></h2></div>
                             
                     </div>
                     <div class="contain-barra">
                         <input class="contain-barra_input" type="text" placeholder="¿Que deseas buscar?">
-                        <button class="contain-barra_button"><img src="./assets/img/Icone.png" alt="buscar"></button>
+                        <button class="contain-barra_button"><img src="../assets/img/Icone.png" alt="buscar"></button>
                         
                     </div>
-                    <div id="header-btn" class="contain-boton_header">
-                        <input type="button" value="Login" id="loguear">
-                    </div> 
-                </div>
-                
-               
-        
+                </div>  
             </div>                
-        </div>             
-    </header>    
-    <main class="main">
-        <div id="destaque">
-            <section>
-                <div class="promocional">
-                    <div class="promocional-text">
-                        <h1>FEBRERO PROMOCIONAL</h1>
-                        <p>Productos seleccionados con 33% de descuento</p>
-                        <button class="promocional-button">Ver consolas</button>
-                    </div>
-                </div>       
-            </section> 
-            <section class="productos" >           
-                <div id="contain-productos" class="contain-productos"></div>                           
-            </section>
-        </div>
-        <div><a href="/screens/iniciarsesion.html">dd</a></div>
-    </main>
+        </div>         
+    </header>
+    <main class=" main listar">
+        <div class="responsive-scroll">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="table__column-producto">Producto</th>
+                        <th class="table__column-imagen">Imagen</th>
+                        <th class="table__column-precio">Precio</th>
+                        <th class="table__column-categoria">Categoria</th>
+                        <th class="table__column-agregar"><div class="table__button-container"><a href="registrar-producto.html" class="table__button-a">Agregar producto</a></div></th>
+                    </tr>
+                </thead> 
+                <tbody data-table=""></tbody>            
+            </table>
+        </div>        
+    </main> 
     <footer class="rodapie">
         <section class="rodapie-informacion">
             <div>
@@ -64,9 +56,9 @@
             <div class="rodapie-informacion-contain">
                 <div class="rodapie-informacion-containColum">
                     <div class="rodapie-informacion-contain_logo">
-                        <img class="logo_alura-rodapie" src="./assets/img/Vector.png" alt="logo alura">
-                            <div><img class="imageHeader-1" src="./assets/img/AluraGeek (1).png" alt=""></div>
-                            <div><img class="imageHeader-2" src="./assets/img/AluraGeek.png" alt=""></div>
+                        <img class="logo_alura-rodapie" src="../assets/img/Vector.png" alt="logo alura">
+                            <div><img class="imageHeader-1" src="../assets/img/AluraGeek (1).png" alt=""></div>
+                            <div><img class="imageHeader-2" src="../assets/img/AluraGeek.png" alt=""></div>
                     </div>
                     <div class="rodapie-informacion-contain_links">
                         <a class="contain_links-a" href="">Quienes Somos</a>
@@ -96,12 +88,6 @@
         </section>
         <section class="rodapie-footer">Desarrollado por eilleenmaria <br>2022</section>
     </footer>
-    
-    <script type="module" src="./controllers/cardproduct.controllers.js"></script>
-    
-    <script src="./js/loguear.js"></script>
-   
-  
-    
+    <script type="module" src="../controllers/producto.controllers.js"></script>
 </body>
 </html>

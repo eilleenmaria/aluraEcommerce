@@ -1,0 +1,199 @@
+.rodapie{
+    display: flex;   
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-start;
+    padding: 0px;   
+    width: 100%;   
+    background: var(--color-footer);
+}
+.rodapie-informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 23rem;
+    padding: 4rem;   
+}
+.rodapie-informacion-contain{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1rem;
+    width: 100%; 
+}  
+.rodapie-informacion-containColum{
+    display: flex;
+    flex-direction: row;    
+    width: 60%;
+    gap: 5%;   
+}
+
+.rodapie-informacion-contain_logo{
+    width: 50%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;      
+}
+.logo_alura-rodapie{width: 2.5rem; height: 1.7rem;}
+.rodapie-informacion-contain_links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    padding-left: 1rem;
+    gap: 1.5rem;
+    width: 50%;    
+}
+.contain_links-a{
+    font-weight: 500;
+    font-size: 1rem;    
+    color: var(--color-gray);
+}
+
+fieldset{width: 100%;}
+.rodapie-informacion-contain_contactForm{
+    display: flex;    
+    flex-direction: colum;
+    align-items: flex-start;
+    padding: 0;
+    gap: .5rem;
+    width: 40%;
+    height: 15rem;    
+}
+.rodapie-informacion-contain_contactForm-legend{    
+    font-weight: 700;
+    font-size: 1rem;
+    width: 100%;
+    height: 1.18rem;
+    color: var(--color-gray);
+}
+.rodapie-informacion-contain_contactForm-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0px;
+    height: 9.62rem;
+    width: 100%;
+}
+.rodapie-informacion-contain_contactForm-inputName{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    width: 100%;
+    height: 3.5rem;
+    background: var(--color-header);
+    border-radius: .25rem;
+}
+.contacForm-inputName-label{
+    width: 100%;
+    font-weight: 400;
+    font-size: .8rem;
+    color: var(--color-gray-light);
+}
+.contacForm-inputName-input{
+    width: 100%;
+    border: none;
+}
+.rodapie-informacion-contain_contactForm-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: .5rem;
+    width: 100%;
+    height: 5.125rem;
+    background: var(--color-header);
+    border-radius: .25rem;
+}
+.contactForm-mensaje-textArea{
+    width: 100%;
+    border: none;
+}
+.rodapie-informacion-contain_contactForm-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.6rem;
+    width: 9rem;
+    height: 3.18rem;
+    background: var(--color-btn);
+    margin-top: 0.6rem;
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-header);
+}
+.rodapie-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; text-align: center;
+    gap: .52rem;
+    width: 100%;
+    height: 6.375rem;
+    background: var(--color-header);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-gray);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+.rodapie-informacion{padding: 1em; gap: 1em;}
+    .rodapie-informacion-contain{gap: 1em;height: 18.75rem;}
+    .rodapie-informacion-containColum{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 0;        
+    }
+    .rodapie-informacion-contain_logo{width: 90%; }
+    .imageHeader-1, .imageHeader-2{width: 98%;}
+    .logo_alura-rodapie{height: 60%;}
+    .rodapie-informacion-contain_links{width: 100%; padding: 0;}
+    .contain_links-a{font-size: 0.8em;}
+    .rodapie-informacion-contain_contactForm{width: 60%; }
+    .rodapie-informacion-contain_contactForm-button{
+        width: 8.31rem;
+        height: 2.5rem;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .rodapie-informacion{
+        height: 31rem;       
+    }
+    .rodapie-informacion-contain{        
+        flex-direction: column;       
+        width: 100%;
+        align-items: center;
+        justify-content:center ;
+            
+    }
+    .rodapie-informacion-contain_logo{width: 40%; height: 1.5rem;}
+    .logo_alura-rodapie{ height: 1rem;}
+    .rodapie-informacion-containColum{
+        width: 100%;
+        align-items: center;        
+        gap: 1rem;        
+    }
+    .rodapie-informacion-contain_links{
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        padding: 0;        
+    }
+    .rodapie-informacion-contain_contactForm{width: 100%;}
+}
+
+

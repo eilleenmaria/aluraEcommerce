@@ -1,0 +1,60 @@
+.logueo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 26.43rem;
+    height:19rem;
+    justify-content:space-between;
+}
+.login-titulo{
+    text-align: center;
+    padding-top:1.6rem ;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--color-gray);
+}
+.login-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 4rem;   
+}
+.login-email,.login-contraseña{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    background: var(--color-header);
+    border: none;
+}
+.login-button{
+    height: 4rem;
+    background: var(--color-btn);
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-header);
+}
+.input-menssage-error{
+    display: none;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+  .login{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 560px){
+    .login-button, .login-input{
+        height: 3rem;
+    }
+}
+
+

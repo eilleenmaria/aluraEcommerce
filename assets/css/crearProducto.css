@@ -1,0 +1,106 @@
+.agregar{ 
+    display: flex;  
+    justify-content: center;
+    padding:2rem 0 2rem 0;
+}
+.agregarProducto{
+    display: flex;
+    width: 34.9rem;
+    /* height: 30.68rem; */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 1rem;
+}
+.agregarProducto_titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    height: 2.2rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-gray);  
+}
+.agregarProducto_input{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0; 
+    gap:0.5rem;
+    height: 3.5rem;  
+    background: var(--color-header);
+    border-radius: 0.25rem;
+}
+
+.agregarProducto_input-image{
+  width: 100%;
+  gap:0.5rem;
+  background: var(--color-header);
+  border-radius: 0.25rem;
+  height: 10.5rem ;
+} 
+/* .agregarProducto_input :nth-child(1){
+    width: 100%;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--color-gray);
+} */
+.input{
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-gray);
+}
+.inputfile-url{    
+    width: 100%;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-gray);
+    overflow: hidden;
+}
+.inputfile{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.agregarProducto-imagen{
+  width: 7rem;
+  height: 7rem; 
+}
+.agregarProducto_descripcion{
+    width: 100%;
+    height: 100%; 
+      
+    border: none;
+}
+.agregarProducto_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3.18rem;
+    width: 100%;
+    background: var(--color-btn);
+    border: none;
+    color: var(--color-header);
+    font-weight: 400;
+    font-size: 1rem;    
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 768px){
+  .agregarProducto{
+    width: 80%;
+  }
+  .agregarProducto_titulo{
+    font-size: 5vw;
+  }
+  .agregarProducto_input-span{font-size: .8rem;}
+  .input-label{font-size: .9rem;}
+  .input{font-size: .8rem;}
+}
