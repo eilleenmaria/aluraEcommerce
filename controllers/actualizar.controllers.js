@@ -64,6 +64,6 @@ formulario.addEventListener("submit", (evento) => {
   const price = document.querySelector("[data-price]").value;
   const description = document.querySelector("[data-description]").value;        
 productService. actualizarProduct (url,categoria,name,price,description, id).then(() => {
-    window.location.href = "edicion_concluida.html";
+    window.location.href = "/screens/edicion_concluida.html";
   });
 });

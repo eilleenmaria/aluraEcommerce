@@ -35,7 +35,7 @@ productService
         if(containProductos.childElementCount < amountCards ){
         containProductos.classList.add('justify')
     }     
-    }).catch((error) => {alert(error); window.location.href="screens/error.html"
+    }).catch((error) => {console.log(error); window.location.href="screens/error.html"
                         }
     
     )

@@ -1,5 +1,5 @@
 const listaProduct = ()=>
-    fetch("https://apiweb-y4tv.onrender.com").then((respuesta) => respuesta.json());
+    fetch("https://apiweb-y4tv.onrender.com/producto").then((respuesta) => respuesta.json());
 
 const crearProduct = (url,categoria,name,price,description) => {
     return fetch("https://apiweb-y4tv.onrender.com/producto", {

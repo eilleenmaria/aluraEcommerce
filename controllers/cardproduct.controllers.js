@@ -2,9 +2,10 @@ import {productService} from "../service/product-service.js";
 import { validateAmountItem } from "../js/amountCards.js";
 
 let div= document.getElementById('contain-productos');
-
+console.log("hello")
 productService
     .listaProduct().then((data) => {
+        console.log("hi")
         let listCategoria=[];
         data.forEach(({categoria})=>{ listCategoria.push(categoria)
             
@@ -54,6 +55,6 @@ productService
            
 
         });
-    }).catch((error) => alert("Ocurrió un error"));
+    }).catch((error) => {window.location.href="screens/error.html" ; console.log("Ocurrió un error" + error)});
 
     

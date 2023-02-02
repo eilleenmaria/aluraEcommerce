@@ -47,7 +47,7 @@
   .table__column-precio{width: 15%;  }
   .table__column-categoria{ width: 30%; }
   .table__column-agregar{width: 20%;} 
-  .table__img{ width: 80%; height: 80%; }
+  .table__img{ width: 80%; height: 5rem; }
   .table thead {font-size: 1.4rem;} 
   .td {padding: 1rem; }   
   .table td {
