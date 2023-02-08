@@ -55,6 +55,6 @@ productService
            
 
         });
-    }).catch((error) => {window.location.href="screens/error.html" ; console.log("Ocurrió un error" + error)});
+    }).catch((error) => {window.location.href="../screens/error.html" ; console.log("Ocurrió un error" + error)});
 
     

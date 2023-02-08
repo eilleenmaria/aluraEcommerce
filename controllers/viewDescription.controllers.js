@@ -5,7 +5,7 @@ const obtenerInformacion = async () => {
   
     if (id === null) {
       console.log(id)
-      window.location.href = "/screens/error.html";
+      window.location.href = "../screens/error.html";
     }
     const url = document.querySelector("[data-img]")    
     const name = document.querySelector("[data-name]");
@@ -26,7 +26,7 @@ const obtenerInformacion = async () => {
       }
     } catch (error) {
       console.log(error)
-      window.location.href = "screens/error.html";
+      window.location.href = "../screens/error.html";
     }
   };
  

@@ -54,5 +54,5 @@ productService
         table.appendChild(nuevaLinea);
       });
     })
-    .catch((error) => alert("Ocurrió un error"));
+    .catch((error) => console.log( error));
   

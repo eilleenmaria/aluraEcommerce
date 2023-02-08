@@ -44,10 +44,10 @@ const obtenerInformacion = async () => {
     }
   } catch (error) {
     console.log(error)
-    window.location.href = "screens/error.html";
+    window.location.href = "../screens/error.html";
   }
 };
-console.log(price.value)
+
 obtenerInformacion();
 
 
@@ -64,6 +64,6 @@ formulario.addEventListener("submit", (evento) => {
   const price = document.querySelector("[data-price]").value;
   const description = document.querySelector("[data-description]").value;        
 productService. actualizarProduct (url,categoria,name,price,description, id).then(() => {
-    window.location.href = "/screens/edicion_concluida.html";
+    window.location.href = "../screens/edicion_concluida.html";
   });
 });
