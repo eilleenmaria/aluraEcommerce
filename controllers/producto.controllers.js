@@ -37,8 +37,10 @@ const crearNuevaLinea = (name, url,price, categoria,id) => {
         .eliminarProduct(id)
         .then((respuesta) => {
           console.log(respuesta);
+          location.reload();
         })
         .catch((err) => alert("Ocurrió un error"));
+       
     });
   
     return linea;
