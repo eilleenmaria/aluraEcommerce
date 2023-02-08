@@ -20,7 +20,7 @@ formulario.addEventListener("submit", (evento)=>{
     const price = document.querySelector("[data-price]").value;
     const description = document.querySelector("[data-description]").value;
     productService.crearProduct(url,categoria,name,price,description).then(() => {
-        window.location.href = "/screens/registro_exitoso.html";
+        window.location.href = "screens/registro_exitoso.html";
       })
       .catch((err) =>alert(err) );
      
