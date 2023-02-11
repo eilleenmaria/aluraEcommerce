@@ -1,5 +1,10 @@
 {
   "users":[
+    {
+      "user": "Emilia Florez",
+      "email": "emilia-florez@mail.com",
+      "password": "Ef12121212"
+    }
 
   ],
   "producto": [
