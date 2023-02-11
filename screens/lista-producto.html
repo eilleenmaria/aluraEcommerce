@@ -42,7 +42,12 @@
                         <th class="table__column-imagen">Imagen</th>
                         <th class="table__column-precio">Precio</th>
                         <th class="table__column-categoria">Categoria</th>
-                        <th class="table__column-agregar"><div class="table__button-container"><a href="registrar-producto.html" class="table__button-a">Agregar producto</a></div></th>
+                        <th class="table__column-agregar"><div class="table__button-container">
+                            <select id="registrar"  class="table__button-container-select" > 
+                            <option value="">Nuevo registro</option>                          
+                            <option value="user">Usuario</option>
+                            <option value="producto">Producto</option>
+                        </select></div></th>
                     </tr>
                 </thead> 
                 <tbody data-table=""></tbody>            
@@ -90,5 +95,6 @@
         <section class="rodapie-footer">Desarrollado por eilleenmaria <br>2022</section>
     </footer>
     <script type="module" src="../controllers/producto.controllers.js"></script>
+    <script src="../js/select.js"></script>
 </body>
 </html>

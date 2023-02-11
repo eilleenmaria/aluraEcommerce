@@ -31,13 +31,40 @@
     font-weight: 300;
     font-size: 0.9rem;    
   }
-  .table__button-container{    
-    width: 9rem;
+  .table__button-container{
+    position: relative;
+  display: block;
+  width: 9rem;
+  height: 3rem;
+  margin: 0 auto;
+  border: 1px solid var(--color-btn);
+  background-color: none;
+  z-index: 10;
+ 
+    /* width: 9rem;
     height: 3rem;
     border: solid 1px var(--color-btn);
-    box-shadow: var(--shadow);
-    padding: .5rem  0 0 .7rem ;
+    box-shadow: var(--shadow); */
+    /* padding: .5rem  0 0 .7rem ; */
   }
+  
+  .table__button-container select{
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: .7rem;
+    font-size: 1rem;
+    color:var(--color-btn);
+  }
+  
   
   .table__button-control li:first-of-type {
     margin-right: 2.25rem;
@@ -69,7 +96,10 @@
     .listar{padding: 0;}
     .simple-button--delete,  .simple-button--edit, .table td{font-size: 0.8rem;}
     .table__button-container{
-      width: 4.5rem;  padding: .5rem 0  0 0.3rem;
+      width: 6rem;height: 2rem;  
+    }
+    .table__button-container select{
+      font-size: .8rem;
     }
     .table__button-control{
       flex-direction: column; justify-content: flex-start !important; row-gap: 0.5rem;
@@ -79,7 +109,11 @@
     }
     .table__img{ width: 100%; height: 100%; }
     .table thead{font-size: 1rem;}
-  }   
+  } 
+  .table__column-agregar{
+    padding: 0 !important;
+    margin: 0 !important;
+  }  
   
   @media only screen and (max-width: 560px){
     .responsive-scroll{

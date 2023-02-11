@@ -49,6 +49,9 @@ export function valida(input) {
       valueMissing: "Este campo no puede estar vacío",
      
     },
+    nameUser: {
+      valueMissing: "El campo nombre no puede estar vacío",
+    }
    
   };
   

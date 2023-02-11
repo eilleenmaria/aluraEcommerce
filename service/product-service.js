@@ -32,6 +32,7 @@ const crearProduct = (url,categoria,name,price,description) => {
       .then((respuesta) => respuesta)
       .catch((err) => console.log(err));
   };
+ 
 
   export const productService={
     listaProduct,

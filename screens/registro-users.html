@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek iniciar sesion</title>
+    <title>AluraGeek Registro Usuario</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/Vector.png" type="image/x-icon" />
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/header-button.css">
     <link rel="stylesheet" href="../assets/css/validacioninput.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-   
 </head>
 <body class="contain-principal">
     <header class="section-header">
@@ -28,26 +27,32 @@
                     </div>
                     <div class="contain-barra">
                         <input class="contain-barra_input" type="text" placeholder="¿Que deseas buscar?">
-                        <button class="contain-barra_button"><img src="../assets/img/Icone.png" alt="buscar"></button>
-                        
+                        <button class="contain-barra_button"><img src="../assets/img/Icone.png" alt="buscar"></button>                        
+                    </div>
+                    <div id="admin" class="contain-botonAdmin_header">
+                        <input type="button" value="Menu Administrador" onclick="">
                     </div>
                 </div>                
             </div>                
         </div>         
     </header>
     <main class=" main logueo">
-        <form class="login" data-formlogin>
-            <h2 class="login-titulo">Iniciar Sesion</h2>
+        <form class="login" data-formUser>
+            <h2 class="login-titulo">Registro de Usuarios</h2>
+            <div class="login-input">
+                <input class="login-email input1" type="text"  placeholder="Escriba su nombre completo"  data-tipo="nameUser" required data-user>
+                <span class="input-menssage-error"></span>
+            </div>
             <div class="login-input">
                 <input class="login-email input1" type="email"  placeholder="Escriba su correo electronico"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-tipo="email" required data-email>
-                <span class="input-menssage-error">Este campo es requerido</span>
+                <span class="input-menssage-error"></span>
             </div>
             <div class="login-input">
-                <input class="login-contraseña input1" placeholder="Escriba su contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"  type="password" data-tipo="contraseña" data-password>
-                <span class="input-menssage-error">Este campo es requerido</span>
+                <input class="login-contraseña input1" placeholder="Escriba la contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"  type="password" data-tipo="contraseña" data-password>
+                <span class="input-menssage-error"></span>
             </div>
             
-            <input class="login-button" type="button" value="Entrar">
+            <button class="login-button" type="submit" >Registrar</button>
         </form>
     </main>
     <footer class="rodapie">
@@ -90,7 +95,9 @@
         </section>
         <section class="rodapie-footer">Desarrollado por eilleenmaria <br>2022</section>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="../js/funcional.js"></script>   
+    <script type="module" src="../controllers/users.controllers.js"></script>
    
 </body>
 </html>
