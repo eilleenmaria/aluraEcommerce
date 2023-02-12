@@ -4,7 +4,7 @@ import { validateAmountCard } from "../js/amountCards.js";
 const todoProductos=(name, url,price,description,id)=>{
     const agregarProducto= document.getElementById("agregarProducto" );
     agregarProducto.addEventListener("click",()=>{   
-        window.location.href ="registrar-producto.html" ;            
+        window.location.href ="iniciarsesion.html" ;            
     })
     const view = document.createElement("div");
     view.classList.add("productos-item")

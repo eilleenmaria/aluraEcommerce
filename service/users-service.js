@@ -4,14 +4,22 @@ fetch("https://apiweb-y4tv.onrender.com/users").then((respuesta) => respuesta.js
 const crearUsers = (user,email, password)=>{
     return fetch("https://apiweb-y4tv.onrender.com/users",{
         method: "POST",
-        headers: {"Content-Type": "application/json",
-    },
-    body: JSON.stringify({user,email,password, id: uuid.v4()}),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ user, email, password, id: uuid.v4() }),
+      
     })
 }
 
-const readUser =(id)=> { 
-    return fetch(`https://apiweb-y4tv.onrender.com/users/${id}`).then((respuesta)=> respuesta.json());
+const readUser = async(id)=> { 
+    try{
+        const respuesta = await fetch(`https://apiweb-y4tv.onrender.com/users/${id}`);
+    return await respuesta.json();
+    }catch(err) {
+        console.log(err);
+        // window.location.href = "../screens/iniciarsesion.html"
+    };
 } 
 
 
