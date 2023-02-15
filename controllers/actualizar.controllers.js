@@ -18,9 +18,9 @@ file.addEventListener('input', async (event) => {
 const obtenerInformacion = async () => {
   const urlLocation = new URL(window.location);
   const id = urlLocation.searchParams.get("id");
+  console.log(id)
 
-  if (id === null) {
-    console.log(id)
+  if (id === null) {    
     window.location.href = "screens/error.html";
   }
   const url = document.querySelector("[data-image]")   

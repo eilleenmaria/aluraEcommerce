@@ -1,47 +1,28 @@
 import { userService } from "../service/users-service.js";
-
-const comprobarSeccionUser= async () => {
-    const userIdSeccion = JSON.parse(sessionStorage.getItem("userId"));
-    const userDataBase = await userService.readUser(userIdSeccion);
-  
-    if (userIdSeccion == null || userDataBase.id == undefined) {
-      return false;
-    }
-  
-    return userIdSeccion == userDataBase.id;
-    
-  };
-  
-const isAlreadyUser = await comprobarSeccionUser();
-if(isAlreadyUser){
-    alert("Su sesion ya ha iniciado")
-    window.location.href= "../screens/registrar-producto.html"
-}
-
-async function validarCredencialUser(thisEmail, thisPassword){
-     new Promise((resolve)=>{    
+const validarCredencialUser= async(thisEmail, thisPassword) =>{    
       userService.listUsers().then((data)=>{        
-        data.forEach(({email, password,id}) => {
-            if(thisEmail==email && thisPassword==password){
-                sessionStorage.setItem("userId", JSON.stringify(id));
-                return true
+        data.forEach(({email, password, id}) => {
+          
+            if(thisEmail==email && thisPassword==password && id== "1da52b77-fbdf-4e5e-a86d-d2e52954f773"){
+                
+              window.location.href= "../screens/registrar-producto.html"
+            }else{
+              alert("Las credenciales son invalidas, intenta nuevamente");
             }
-        });
-      }).catch((error) => console.log( error));  
-      return false
-    })
-};
+              });
+            })
+            .catch((error) => console.log( error));
+           
+          };  
+
 
 const formulario = document.querySelector("[data-formlogin]");
 formulario.addEventListener("submit", async (evento)=>{
     evento.preventDefault();
     const email =document.querySelector("[data-email]").value;
+    console.log(email)
     const password = document.querySelector("[data-password]").value;
+    console.log(password)
     const validarUser = await validarCredencialUser(email,password);
-    if( validarUser){
-        window.location.href= "../screens/registrar-producto.html"
-
-    }else{
-        alert("Las credenciales son invalidas, intenta nuevamente");
-    }
+    console.log(validarUser)
 });

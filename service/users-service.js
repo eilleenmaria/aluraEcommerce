@@ -11,11 +11,18 @@ const crearUsers = (user,email, password)=>{
       
     })
 }
+// const readUser = (id) => {
+//     return fetch(`https://apiweb-y4tv.onrender.com/users/${id}`).then((respuesta) =>
+//       respuesta.json()
+//     );
+//   };
 
 const readUser = async(id)=> { 
     try{
         const respuesta = await fetch(`https://apiweb-y4tv.onrender.com/users/${id}`);
+        console.log(respuesta) 
     return await respuesta.json();
+    
     }catch(err) {
         console.log(err);
         // window.location.href = "../screens/iniciarsesion.html"
